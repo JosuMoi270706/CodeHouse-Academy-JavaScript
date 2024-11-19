@@ -1,19 +1,10 @@
-/*
-Verificación de Edad y Ingresos:
-Para ser elegible para un subsidio, debes tener al menos 18 años y tus ingresos mensuales deben estar entre 500€ y 2000€. Escribe un programa que pregunte al usuario su edad y sus ingresos mensuales y muestre por pantalla si el usuario es elegible para el subsidio o no. 
-
-*/
-
-let edad = parseInt(prompt("Introduce tu edad: "));
-let ingresos = parseInt(prompt("Introduce tus ingresos mensuales: "));
-let elegible = false;
-
-if (edad >= 18 && ingresos >= 500 && ingresos <= 2000) {
-    elegible = true;
-}
-
-if (elegible) {
-    console.log("Eres elegible para el subsidio");
-} else {
+let edad1 = 18;// Aqui declaro la variable edad
+let ingresos1 = 500; //Aqui declaro la variable ingresos
+let elegible1 = false; //Declaro la variable elegible y le asigno el valor false. (es un booleano)
+ //Creamos una condicional if para revisar que el usuario cumpla con los requisitos para recibir el subsidio.
+if (edad1 >= 18 && ingresos1 >= 500 && ingresos1 <= 2000) {// se inicia con if y revisamos que la edad sea mayor o igual a 18 y que el ingreso no sea menor igual a 500 y no sea mayor igual a 2000
+    elegible1 = true;//en caso que se cumpla el requisito el valor de la variable "elegible" cambia a true (booleano)
+    console.log("Eres elegible para el subsidio"); // imprimo la respuesta si es beneficiario
+} else { //usando el else imprimo la respuesta si no es beneficiario
     console.log("No eres elegible para el subsidio");
 }
